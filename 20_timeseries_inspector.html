@@ -13185,7 +13185,7 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># geemap.update_package()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#geemap.update_package()</span>
 </pre></div>
 
     </div>
@@ -13432,6 +13432,23 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># roi = ee.Geometry.Polygon(</span>
 <span class="c1">#     [[[-115.897448, 35.640766], </span>
 <span class="c1">#       [-115.897448, 36.603608], </span>
@@ -13470,7 +13487,7 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
     
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;geodesic&#39;: False, &#39;type&#39;: &#39;Polygon&#39;, &#39;coordinates&#39;: [[[5.129888, 51.68225], [5.570609, 51.843535], [5.978158, 51.602863], [5.966311, 51.467291], [5.629846, 51.378657], [5.347879, 51.393441], [5.087237, 51.484997], [5.129888, 51.68225]]]}
+<pre>{&#39;type&#39;: &#39;Polygon&#39;, &#39;coordinates&#39;: [[[5.764856999999998, 52.3028987710502], [5.530955544768479, 52.282278699392414], [5.316278115094365, 52.222114687454074], [5.138322436175421, 52.127342424445324], [5.011337229280327, 52.0056966403843], [4.9451662575133035, 51.86703430168718], [4.9445548313439165, 51.72249546406806], [5.008940587096659, 51.583585734152386], [5.132688859131588, 51.46126213112611], [5.305694658972496, 51.36509335468506], [5.514259300147669, 51.302550408520084], [5.74215410788989, 51.278467901076695], [5.971797463905063, 51.29470239786016], [6.185486139945075, 51.35000265719051], [6.366631293825617, 51.44009699847324], [6.500950398862629, 51.557994292115204], [6.5775584657727375, 51.69448574169842], [6.589887850683376, 51.838823534075686], [6.536351342788094, 51.97953894287431], [6.420656249568378, 52.10534704576601], [6.251686950211085, 52.20606979492468], [6.042906742819075, 52.273497218028055], [5.8112872993716564, 52.302102350734465], [5.764856999999998, 52.3028987710502]]]}
 </pre>
 </div>
 </div>
@@ -13691,6 +13708,23 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;USGS/NLCD/NLCD1992&#39;, &#39;USGS/NLCD/NLCD2001&#39;, &#39;USGS/NLCD/NLCD2001_AK&#39;, &#39;USGS/NLCD/NLCD2001_HI&#39;, &#39;USGS/NLCD/NLCD2001_PR&#39;, &#39;USGS/NLCD/NLCD2004&#39;, &#39;USGS/NLCD/NLCD2006&#39;, &#39;USGS/NLCD/NLCD2008&#39;, &#39;USGS/NLCD/NLCD2011&#39;, &#39;USGS/NLCD/NLCD2011_AK&#39;, &#39;USGS/NLCD/NLCD2011_HI&#39;, &#39;USGS/NLCD/NLCD2011_PR&#39;, &#39;USGS/NLCD/NLCD2013&#39;, &#39;USGS/NLCD/NLCD2016&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
   </div>
 
   
@@ -13743,6 +13777,23 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;NLCD 2001&#39;, &#39;NLCD 2006&#39;, &#39;NLCD 2011&#39;, &#39;NLCD 2016&#39;]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13841,6 +13892,61 @@ Restart the Kernel (Menu -&gt; Kernel -&gt; Restart) to take effect.</p>
 <span class="n">Map</span><span class="o">.</span><span class="n">ts_inspector</span><span class="p">(</span><span class="n">left_ts</span><span class="o">=</span><span class="n">landsat_ts</span><span class="p">,</span> <span class="n">right_ts</span><span class="o">=</span><span class="n">NLCD</span><span class="p">,</span> <span class="n">left_names</span><span class="o">=</span><span class="n">landsat_layer_names</span><span class="p">,</span> <span class="n">right_names</span><span class="o">=</span><span class="n">NLCD_layer_names</span><span class="p">,</span> <span class="n">left_vis</span><span class="o">=</span><span class="n">landsat_vis</span><span class="p">,</span> <span class="n">right_vis</span><span class="o">=</span><span class="n">nlcd_vis</span><span class="p">)</span>
 <span class="n">Map</span><span class="o">.</span><span class="n">centerObject</span><span class="p">(</span><span class="n">roi</span><span class="p">,</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
 <span class="n">Map</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
